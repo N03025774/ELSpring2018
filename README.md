@@ -1,6 +1,6 @@
 <img src="https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg" width="300"/>
 
-##Spring 2018 Embedded Linux class
+## Spring 2018 Embedded Linux class
 
 This repostory documents my class work and projects for done for **CPS342**.
 
