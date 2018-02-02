@@ -1,4 +1,4 @@
-![nplogo](https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg)(=250x500)
+![nplogo]<img src="https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg" width="200" height="400" />
 # ELSpring2018
 Spring 2018 Embedded Linux class
 This repostory documents my class work and projects for done for **CPS342**.
