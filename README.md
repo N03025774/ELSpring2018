@@ -1,4 +1,4 @@
-<img src="https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg" width="330"/>
+<img src="https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg" width="310"/>
 
 Spring 2018 Embedded Linux class
 
