@@ -1,4 +1,3 @@
 # ELSpring2018
-This is a template for Spring 2018 Embedded Linux class
-
-b/ TEST  /b
+Spring 2018 Embedded Linux class
+This repostory documents my class work and projects for done for **CPS342**.
