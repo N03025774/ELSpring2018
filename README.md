@@ -13,7 +13,7 @@ This repostory documents my class work and projects for done for **CPS342**.
   ID: [N03025774](https://github.com/N03025774)
 
   Year: Senior
-
+  
 2. **Class Start Date:** Jan 22, 2018
 
 3. **Class End Date:**  May 8, 2018
