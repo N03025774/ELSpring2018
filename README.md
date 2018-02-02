@@ -4,16 +4,15 @@
 
  This repostory documents my class work and projects for done for **CPS342**.
 
- 1.Personal Information :
+  1. Personal Information:
+     Name: Cansu Cabuk
 
-	 Name: David Schloemer
+     Major: Computer Engineering 
 
-	 Major: Computer Engineering
+     ID: N03082705
 
-     ID: N03025774
+     Year: Senior
 
-	 Year: Senior
+   2. Class Start Date: Jan 22, 2018
 
- 2. Class Start Date: Jan 22, 2018
-
- 3. Class End Date: May 8, 2018
+   3. Class End Date: May 8, 2018
