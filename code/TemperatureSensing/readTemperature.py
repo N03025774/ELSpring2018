@@ -6,7 +6,7 @@ import sys
 """ Log Current Time, Temperature in Celsius and Fahrenheit
  To an Sqlite3 database """
 def readTemp():
-   tempfile = open("/sys/bus/w1/devices/28-00044a3807ff/w1_slave")
+   tempfile = open("/sys/bus/w1/devices/ 28-0000069816ee/w1_slave")
    tempfile_text = tempfile.read()
    currentTime=time.strftime('%x %X %Z')
    tempfile.close()
@@ -14,18 +14,17 @@ def readTemp():
    tempF=tempC*9.0/5.0+32.0
    return [currentTime, tempC, tempF]
 
-def logTemp():
-   con = mydb.connect('/home/pi/myPi/Tests/TempSensor/temperature.db')
-   with con:
-     try:
-       [t,C,F]=readTemp()
-       print "Current temperature is: %s F" %F
-       cur = con.cursor()
-       #sql = "insert into TempData values(?,?,?)"
-       cur.execute('insert into TempData values(?,?,?)', (t,C,F))
-       print "Temperature logged"
-     except:
-       print "Error!!"
+#   con = mydb.connect('/home/dave/ELSpring2018/code/TemeraturepSensing/temperature.db')
+#   with con:
+#     try:
+#       [t,C,F]=readTemp()
+#       print "Current temperature is: %s F" %F
+#       cur = con.cursor()
+#       #sql = "insert into TempData values(?,?,?)"
+#       cur.execute('insert into TempData values(?,?,?)', (t,C,F))
+#       print "Temperature logged"
+#     except:
+#       print "Error!!"
 
 print readTemp()
 #logTemp()
