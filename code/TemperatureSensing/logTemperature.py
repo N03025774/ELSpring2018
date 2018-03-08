@@ -15,6 +15,6 @@ def logTemp():
        cur = con.cursor()
        #sql = "insert into TempData values(?,?,?)"
        cur.execute('insert into TempData values(?,?,?)', (t,C,F))
-       print "Temperature logged"
+       print("Temperature logged")
      except:
-       print "Error!!"
+       print("Error!!")
