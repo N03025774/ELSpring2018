@@ -18,3 +18,5 @@ def logTemp():
        print("Temperature logged")
      except:
        print("Error!!")
+
+logTemp()
