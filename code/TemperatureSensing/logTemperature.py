@@ -11,7 +11,7 @@ def logTemp():
    with con:
      try:
        [t,C,F]=readTemp()
-       print "Current temperature is: %s F" %F
+       print("Current temperature is: %s F" %F)
        cur = con.cursor()
        #sql = "insert into TempData values(?,?,?)"
        cur.execute('insert into TempData values(?,?,?)', (t,C,F))
