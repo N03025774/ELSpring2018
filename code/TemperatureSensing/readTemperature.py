@@ -15,4 +15,4 @@ def readTemp():
     tempF = tempC*9.0/5.0+32.0
     return [currentTime, tempC, tempF];
 
-print(readTemp())
+print("readTemperature is %d" %readTemp())
