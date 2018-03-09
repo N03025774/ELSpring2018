@@ -1,24 +1,24 @@
 <!doctype html>
    <head>
-      <title>Read Temps</title>
+      <title>Temperature logs</title>
    </head>
 
    <body>
-      <p> This is where Temperature data will be displayed!</p>
+      <p> This is where Temperature data will be displayed if we're lucky</p>
 
       <br><br><br><br><br><br><br><br>
 
       <form action="http://localhost:80" method="post">
 
-	 <label for="upperDate"> Enter Upper Date </label>
+	 <label for="upperDate"> Enter End Date </label>
          <input type="date" name="upperDate" size="25" id="upperDate"> 				<!--Add one-line text box-->
 
          <br><br><br>
 
-	 <label for="lowerDate"> Enter Lower Date </label>
+	 <label for="lowerDate"> Enter Begin Date </label>
          <input type="date" name="lowerDate" size="25" id="lowerDate">
 
-         <input type="submit"> 
+         <input type="submit">
 
       </form>
    <p>{{ upperDate }}</p>
