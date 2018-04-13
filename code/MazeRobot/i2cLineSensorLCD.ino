@@ -9,14 +9,15 @@
 #define NUM_SENSORS   8     // number of sensors used
 #define TIMEOUT       3000  // waits for 2500 microseconds for sensor outputs to go low
 #define EMITTER_PIN   10    // Pin that controls LED lights
-#define SENSORSCALE   300   //divide sensor timeout reading by
-#define SENSITIVITY   2     //line detection threshhold (timeout/sensorscale)
+#define SENSORSCALE   300   // Divide sensor timeout reading by
+#define SENSITIVITY   2     // Line detection threshhold (timeout/sensorscale)
+#define I2CADDRESS    8     // I2C address
 
 unsigned int QTRData[NUM_SENSORS];
 unsigned int QTRDataProcessed[NUM_SENSORS];
 
-LiquidCrystal lcd(13, A1, 12, 11, A2, A3); //LCD
-QTRSensorsRC qtr((unsigned char[]) {2, 3, 4, 5, 6, 7, 8, 9}, NUM_SENSORS, TIMEOUT, EMITTER_PIN); //QTR Sensor
+LiquidCrystal lcd(13, A1, 12, 11, A2, A3); //4-bit LCD (enable, RS, D4, D5, D6, D7)
+QTRSensorsRC qtr((unsigned char[]) {2, 3, 4, 5, 6, 7, 8, 9}, NUM_SENSORS, TIMEOUT, EMITTER_PIN); //QTR Sensor data pins (0, 1, 2, 3, 4, 5, 6, 7)
 
 
 void setup()
@@ -26,7 +27,7 @@ void setup()
   Serial.begin(9600);
   delay(1000);
     //begin I2C
-  Wire.begin(8);                // join i2c bus with address #8
+  Wire.begin(I2CADDRESS);                // join i2c bus with address set by I2CADDRESS
   Wire.onRequest(requestEvent); // register event
     //begin LCD
   lcd.begin(16,2);
@@ -48,9 +49,6 @@ void loop()
 
   //transmitQTRDataTest(QTRDataProcessed); //test conversion to byte
 }
-
-
-
 
 
 

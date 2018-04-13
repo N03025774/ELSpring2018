@@ -1,4 +1,4 @@
-#David Schloemer
+#David Schloemer 4/13/18
 #Embedded Linux Spring 2018
 #This program reads a byte of data from an i2c device
 #In this case I am reading an 8 bit value, each bit indicates if there is a line beneath the sensor. The bit will be 1 if there is a line beneath the sensor.
