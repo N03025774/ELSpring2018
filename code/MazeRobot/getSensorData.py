@@ -23,6 +23,8 @@ def getLineState(sensor): #needs testing
 while True:
         print "Line Position Test"
         position = getLinePosition()
-
-        print '{0:08b}'.format(position) #print as binary value
+        for x in range (0, 8):
+		print getLineState(x),
+	print "\n"
+        #print '{0:08b}'.format(position) #print as binary value
         time.sleep(2)
