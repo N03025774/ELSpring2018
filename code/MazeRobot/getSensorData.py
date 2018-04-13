@@ -13,5 +13,5 @@ def linePosition():
 while True:
         print "Line Position Test"
         position = linePosition()     #this returns the value to 1 decimal place in degrees.
-        print bin(bearing)
+        print bin(position)
         time.sleep(2)
