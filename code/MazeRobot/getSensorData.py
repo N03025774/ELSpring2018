@@ -32,7 +32,8 @@ while True:
 
         for x in range (0, 8):          #this for loop shows iteration through string
 		          print getLineState(x),#the , indicated values should print next to each other
-	    print "\n"                      #new line after all values are read
+
+        print "\n"                      #new line after all values are read
 
         #print '{0:08b}'.format(position) #print as binary value
         time.sleep(1)                     #wait 1s before next read
