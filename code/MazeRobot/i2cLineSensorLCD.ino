@@ -1,4 +1,4 @@
-//David Schloemer
+//David Schloemer 4/13/18
 //Embedded Linux Spring 2018
 //Program reads line locations, writes to LCD, and transmits over I2C
 
