@@ -7,6 +7,8 @@
 #>5 Interface Options
 #>P5 I2C
 #>Yes
+#This file can be used as a library by using 'from getSensorData import getLineState'
+
 
 import smbus         #i2c pyton interface library
 import time          #for delays

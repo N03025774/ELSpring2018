@@ -27,7 +27,7 @@ void setup()
   Serial.begin(9600);
   delay(1000);
     //begin I2C
-  Wire.begin(I2CADDRESS);                // join i2c bus with address set by I2CADDRESS
+  Wire.begin(I2CADDRESS);       // join i2c bus with address set by I2CADDRESS
   Wire.onRequest(requestEvent); // register event
     //begin LCD
   lcd.begin(16,2);
