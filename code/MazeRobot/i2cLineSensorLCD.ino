@@ -100,6 +100,8 @@ void readQTRData()
   Serial.println();
   return;
 }
+
+
 /***********************************  LCD Functions  ***********************************/
 //LCD initialization
 void initLCD(LiquidCrystal liquid){
@@ -150,6 +152,7 @@ void writeTopQTR(unsigned int QTRDataProcessed[]){
   lcd.write("    ");
   return;
 }
+
 
 /***********************************  I2C Functions  ***********************************/
 
